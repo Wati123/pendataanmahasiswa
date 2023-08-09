@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Registrasi E-KTP
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content padding>
+    <ion-card class="welcome-card bg-content">
+      <ion-card-header>
+        <ion-card-title color="primary">Aplikasi Pendataan E-KTP sekitaran Kecamatan Kabanjahe menjelang pemilu </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Silahkan isi form dibawah ini untuk pendataan E-KTP!</p>
+
+          <ion-list>
+
+            <ion-item>
+              <ion-label position="floating">Nik</ion-label>
+              <ion-input type="text" [(ngModel)]="nik"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Nama Lengkap</ion-label>
+              <ion-input type="text" [(ngModel)]="nama_lengkap"></ion-input>
+            </ion-item>
+          
+           <ion-item>
+            <ion-label position="floating">Jenis Kelamin</ion-label>
+            <ion-select [(ngModel)]="jenis_kelamin" class="popover-content"> placeholder="Pilih Jenis Kelamin">
+              <ion-select-option value="laki-laki">Laki-laki</ion-select-option>
+              <ion-select-option value="perempuan">Perempuan</ion-select-option>
+              </ion-select>
+              </ion-item>
+            
+  
+            <ion-item>
+              <ion-label position="floating">Alamat</ion-label>
+              <ion-select [(ngModel)]="alamat" class="popover-content"> placeholder="Pilih Kelurahan"
+                <ion-select-option value="kelurahan Gung Leto">Kelurahan Gung Leto</ion-select-option>
+                <ion-select-option value="kelurahan Gung Negeri">Kelurahan Gung Negeri</ion-select-option>
+                <ion-select-option value="desa Kaban">Desa Kaban</ion-select-option>
+                <ion-select-option value="desa Kacaribu">Desa Kacaribu</ion-select-option>
+                <ion-select-option value="kelurahan Kampung Dalam">Kelurahan Kampung Dalam</ion-select-option>
+                <ion-select-option value="desa Kandibata">Desa Kandibata</ion-select-option>
+                <ion-select-option value="desa Ketaren">Desa Ketaren</ion-select-option>
+                <ion-select-option value="desa Lousimomo">Desa Lousimomo</ion-select-option>
+                <ion-select-option value="kelurahan Padang Mas">Kelurahan Padang Mas</ion-select-option>
+                <ion-select-option value="desa Rumah Kabanjahe">Desa Rumah Kabanjahe</ion-select-option>
+                <ion-select-option value="desa Samura">Desa Samura</ion-select-option>
+                <ion-select-option value="desa Sumber Mufakat">Desa Sumber Mufakat</ion-select-option>
+              </ion-select>
+              </ion-item>
+
+            </ion-list>
+          
+  
+          <div padding>
+            <ion-button expand="block" color="primary" size="medium"
+            (click)="addRegister()"><ion-icon name="trending-up-outline">
+            </ion-icon>
+          Daftar
+          </ion-button>
+          </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+  
+        
+      
+  
